@@ -7,6 +7,6 @@ public class Score : MonoBehaviour
 
     public void FixedUpdate()
     {
-        _score.text = SPBSpawner.Instance.Targets.Count.ToString();
+        _score.text = SpearedSPB.Instance.Targets.Count.ToString();
     }
 }

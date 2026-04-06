@@ -496,7 +496,7 @@ Transform:
   m_GameObject: {fileID: 619394800}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 5.82, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -758,11 +758,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c063bfd2308f4d8cafc2c7c721cce63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpawnAndThrow
-  _item: {fileID: 7501308413647347587, guid: e5fcd7fac53ef418191c61f52fcd5299, type: 3}
-  _itemSize: {x: 1.5, y: 1.5}
   _cam: {fileID: 519420031}
-  _spawnTime: 1
   _target: {fileID: 403632221}
+  _thrownItem: {fileID: 7501308413647347587, guid: e5fcd7fac53ef418191c61f52fcd5299, type: 3}
+  _itemSize: {x: 1.5, y: 1.5}
+  _spawnTime: 3
+  _mainItem: {fileID: 5987693111381402321, guid: 9b8c129c33ffedf489787da76bd8a7b2, type: 3}
 --- !u!4 &1244541418
 Transform:
   m_ObjectHideFlags: 0
@@ -819,7 +820,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1599773476}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -872,11 +873,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   _animator: {fileID: 1835458264}
   _triggerPoint: {fileID: 403632221}
-  _triggerSize: {x: 0.85, y: 2.18}
+  _triggerSize: {x: 0.8, y: 2}
   _targetLayer:
     serializedVersion: 2
     m_Bits: 64
   _spawner: {fileID: 352312800}
+  _lifePoints: 3
 --- !u!1 &1835458260
 GameObject:
   m_ObjectHideFlags: 0
@@ -1128,8 +1130,8 @@ SceneRoots:
   m_Roots:
   - {fileID: 519420032}
   - {fileID: 619394802}
-  - {fileID: 1244541418}
   - {fileID: 403632221}
   - {fileID: 53492569}
   - {fileID: 1599773477}
+  - {fileID: 1244541418}
   - {fileID: 2025382758}

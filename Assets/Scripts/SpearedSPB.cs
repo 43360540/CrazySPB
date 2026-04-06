@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SPBSpawner : MonoSingleton<SPBSpawner>
+public class SpearedSPB : MonoSingleton<SpearedSPB>
 {
     [SerializeField] private Transform _target;
     [SerializeField] private Transform _startPoint;
